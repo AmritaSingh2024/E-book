@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#b894fe</color>
+    <color name="purple_500">#b894fe</color>
+    <color name="purple_700">#b894fe</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#735e96</color>
+    <color name="loginBkColor">#f0f0f0</color>
+    <color name="lavender">#735e96</color>
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+<color name="cardcolor">#e5d8ff</color>
+    <color name="textColorPrimaryLight">#FF000000</color>
+    <color name="textColorPrimaryDark">#FFFFFFFF</color>
+        <color name="whiteS">#FFFFFF</color>
+        <color name="blackS">#000000</color>
+
+    <color name="colorPrimary">#6200EE</color>
+    <!-- Define your primary dark color -->
+    <color name="colorPrimaryDark">#3700B3</color>
+    <!-- Define your accent color -->
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Define other colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Define light mode specific colors -->
+    <color name="lightBackground">#FFFFFF</color>
+    <color name="lightTextColor">#000000</color>
+
+    <!-- Define dark mode specific colors -->
+    <color name="darkBackground">#121212</color>
+    <color name="darkTextColor">#FFFFFF</color>
+<!---card view background color-->
+        <color name="read_background">#ffb31f</color>
+        <color name="booklist_background">#996fff</color>
+        <color name="couponcode_background">#51c620</color>
+        <color name="sticky_background">#fe6265</color>
+        <color name="feedback_background">#9c82ff</color>
+        <color name="material_background">#ffc300</color>
+
+
+</resources>

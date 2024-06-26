@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardBackgroundColor="@color/cardcolor"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/bookCoverImageView"
+            android:layout_width="130dp"
+            android:layout_height="180dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/cover1" />
+
+        <TextView
+            android:id="@+id/bookTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/bookCoverImageView"
+            android:layout_toLeftOf="@id/bookCoverImageView"
+            android:text="Book Name"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookTitleTextView"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/bookCoverImageView"
+            android:layout_toLeftOf="@id/bookCoverImageView"
+            android:layout_marginTop="5dp"
+            android:text="Author Name"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/publishDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Author"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/bookCoverImageView"
+            android:layout_toLeftOf="@id/bookCoverImageView"
+            android:layout_marginTop="5dp"
+            android:text="Publish Date"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/publishDate"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/bookCoverImageView"
+            android:layout_toLeftOf="@id/bookCoverImageView"
+            android:layout_marginTop="5dp"
+            android:text="1000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+
+       <!-- <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/language"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/bookCoverImageView"
+            android:layout_toLeftOf="@id/bookCoverImageView"
+            android:layout_marginTop="5dp"
+            android:text="Description"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/black" />-->
+
+        <Button
+            android:id="@+id/extendNowButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:text="Buy Book"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_background" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
