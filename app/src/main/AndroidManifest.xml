@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Application.BaseApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.E_Book"
+        tools:targetApi="31">
+        <activity
+            android:name=".ReadBook.WebViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MaterialList.PDFViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThemeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_theme"
+            android:theme="@style/Theme.E_Book.NoActionBar" />
+        <activity
+            android:name=".MaterialList.MaterialActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FeedBackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AllBookList.ExtendBuyNowActivity"
+            android:exported="true"
+            android:label="@string/title_activity_extend_now"
+            android:theme="@style/Theme.E_Book.NoActionBar" />
+        <activity
+            android:name=".ReadBook.BuyNowActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Offers.Available_OffersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AllBookList.Extend_AccessActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ReadBook.ListBookActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PrivacySecurityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StickyNotes.StickyNotesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Profile.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BaseActivity"
+            android:exported="true" />
+        <activity
+            android:name=".About_usActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoard.DashBoardActivity"
+            android:configChanges="uiMode"
+            android:exported="true" />
+        <activity
+            android:name=".GuestedLoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

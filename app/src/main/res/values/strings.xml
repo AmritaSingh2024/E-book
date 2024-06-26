@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LUCIDOCEANS</string>
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="login_name_hint">Name</string>
+    <string name="login_mobile_number_hint">Mobile Number</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_extend_now">ExtendNowActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="material">Material</string>
+    <string name="read_book">Read Book</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="notification_icon_description">Notification Icon</string>
+    <string name="description_text_2">As you immerse yourself in the boundless realms of literature, each page becomes a portal to new dimensions of thought and emotion, where the vibrant hues of imagination paint landscapes of infinite possibility, and the symphony of words orchestrates a melody that resonates deep within your soul, urging you to wander through the corridors of time, to dance with characters both mythical and mundane, to confront the demons of your own fears and aspirations, and to emerge on the other side, transformed by the alchemy of storytelling.</string>
+    <string name="description_text_1">Open the door to imagination with each turn of the page, discovering worlds where anything is possible and dreams take flight, where the echoes of ancient civilizations dance among the stars, and the whispers of enchanted forests beckon you to explore their shadowed depths, where heroes rise from the ashes of adversity, wielding courage as their sword and compassion as their shield, where the boundaries of reality blur and the fantastical becomes tangible, inviting you to join the ranks of intrepid explorers charting the uncharted territories of the human soul.</string>
+    <string name="title_activity_theme">ThemeActivity</string>
+</resources>

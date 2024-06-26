@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/ebook"
+    tools:context=".ReadBook.BuyNowActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/custom_edittext">
+
+            <TextView
+                android:id="@+id/buyNowText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy Now"
+                android:textSize="36sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/lavender"/>
+
+            <EditText
+                android:id="@+id/et_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:hint="Enter Price"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:background="@drawable/custom_edittext"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_selected_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:padding="8dp"
+                android:text="Select Date"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:onClick="showDatePicker" />
+            <!-- Set onClick method here -->
+
+            <EditText
+                android:id="@+id/et_coupon_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Coupon Code"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:background="@drawable/custom_edittext" />
+
+            <Button
+                android:id="@+id/btn_apply_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply Coupon"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/btn_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/iv_qr_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="16dp"
+                android:src="@drawable/baseline_qr_code_2_24"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

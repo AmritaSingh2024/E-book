@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- action_notification_layout.xml -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notificationBadge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/badge_background"
+    android:gravity="center"
+    android:minWidth="20dp"
+    android:textColor="@android:color/white"
+    android:textSize="12sp"
+    android:visibility="gone" />

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ebookb">
+
+    <!-- Profile CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileCardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Profile Text -->
+            <TextView
+                android:id="@+id/registrationText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Profile Image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/pperson"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/registrationText"
+                android:contentDescription="Profile Image"/>
+
+            <!-- Username EditText -->
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:hint="Username"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profileImage" />
+
+            <!-- First Name EditText -->
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:hint="First Name"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/name" />
+
+            <!-- Last Name EditText -->
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:hint="Last Name"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/firstName" />
+
+            <!-- Email EditText -->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/email"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lastName" />
+
+            <!-- Date of Birth EditText -->
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_calender"
+                android:hint="Date of Birth"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/email" />
+
+            <!-- Gender RadioGroup -->
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal"
+                android:background="@drawable/custom_edittext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dob">
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/otherRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Other" />
+            </RadioGroup>
+
+            <!-- Contact Number EditText -->
+            <EditText
+                android:id="@+id/mobileNo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:hint="Contact Number"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/genderRadioGroup" />
+
+            <!-- Address EditText -->
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/baseline_location_on_24"
+                android:hint="Address"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mobileNo" />
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/address">
+
+                <!-- Edit Button -->
+                <Button
+                    android:id="@+id/EditBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Edit"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:backgroundTint="@color/lavender"
+                    app:cornerRadius="10dp" />
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/SaveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Save"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/lavender"
+                    app:cornerRadius="10dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

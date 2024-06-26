@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#e4d8fe">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/securityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Security Privacy"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- CardView wrapping the ImageView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="296dp"
+        android:layout_height="170dp"
+        android:id="@+id/card"
+        app:cardBackgroundColor="#e4d8fe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/securityTitle"
+
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/securityLogo"
+            android:layout_width="296dp"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/secplogo" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- ScrollView containing the Security Content TextView -->
+
+    <!-- Back Button -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!-- Security Content TextView -->
+        <TextView
+            android:id="@+id/securityContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Welcome to our eBook app! Your privacy and security are our top priorities This document outlines our policies regarding the collection, use, and protection of your personal information.
+            \n\nData Collection\nWe collect the following types of information to
+            provide and improve our services:\nPersonal Information: When you register, we collect information such as your name, email address, and password.\nUsage Data: We collect data about how you use the app, including the books you read, search queries, and interactions within the app.\nDevice Information: We collect information
+            about the device you use to access the app, such as the device model, operating system, and IP address.\n\nData Use\nWe use your data to:\nProvide and maintain our services.\nPersonalize your experience and recommend content.\nImprove our app based on user feedback and usage patterns.\nCommunicate with you about updates, promotions, and news related to the app.\n\nData Protection\nWe implement a variety of security measures to ensure the safety of your personal information:\nEncryption: All sensitive information is transmitted via Secure Socket Layer (SSL) technology and encrypted in our database.\nAccess Control: Only authorized personnel have access to personal information, and they are required to keep the information confidential.\nRegular Audits: We regularly review our security practices to keep up with emerging threats and ensure the highest level of protection.\n\nUser Control\nYou have control over your personal information:\nAccount Settings: You can update your personal information and change your password at any time through the account settings.\nData Deletion: You can request the deletion of your account and personal data by contacting our support team.\n\nCookies and Tracking\nOur app uses cookies and similar tracking technologies to enhance
+            your experience:\nCookies: Small files stored on your device that help us remember your preferences and usage patterns.\nAnalytics: We use third-party analytics tools to understand how our app is used and to improve its functionality.\n\nThird-Party Services\nWe may share your information with third-party services for specific purposes, such as payment processing and analytics. These services are required to adhere to our data protection standards.\n\nChanges to This Policy\nWe may update our security and privacy policies from time to time. We will notify you of any significant changes by posting the new policy on our app and informing you via email or in-app notifications.\n\nContact Us\nIf you have any questions or concerns about our security and privacy practices, please contact us at:\n\nEmail: lucidpublication@gmail.com \nContact: +91-9621176465\nAddress: Lucid Ocean Pvt Ltd Behind BMW Speed Motorwagen, Chinhat Lucknow-226028 Uttar Pradesh,India\n\nThank you for trusting our eBook app. We are committed to protecting your personal information and providing a secure and enjoyable reading experience."
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginBottom="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

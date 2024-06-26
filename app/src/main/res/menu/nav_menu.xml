@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:fontFamily="@font/rbbold"
+        android:title="Home" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/abouts"
+        android:fontFamily="@font/rbbold"
+        android:title="About" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile"
+        android:fontFamily="@font/rbbold"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/security"
+        android:icon="@drawable/baseline_security_24"
+        android:fontFamily="@font/rbbold"
+        android:title="Privacy_Security" />
+
+    <item
+        android:id="@+id/change_password"
+        android:icon="@drawable/baseline_settings_24"
+        android:fontFamily="@font/rbbold"
+        android:title="Setting" />
+
+</menu>

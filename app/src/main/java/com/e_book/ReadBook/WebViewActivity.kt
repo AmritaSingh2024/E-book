@@ -1,0 +1,67 @@
+package com.e_book.ReadBook
+import android.annotation.SuppressLint
+import android.graphics.Bitmap
+import android.os.Bundle
+import android.view.View
+import android.webkit.WebSettings
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import android.widget.ProgressBar
+import androidx.appcompat.app.AppCompatActivity
+import com.e_book.R
+import com.e_book.ThemeActivity
+
+class WebViewActivity : ThemeActivity() {
+
+    private lateinit var webViews: WebView
+    private lateinit var progressBar: ProgressBar
+
+    @SuppressLint("MissingInflatedId")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_web_view)
+
+        webViews = findViewById(R.id.webViews)
+        progressBar = findViewById(R.id.progressBar)
+
+        val fileUrl = intent.getStringExtra("FILE_URL") ?: return
+
+        // Configure WebView settings
+        webViews.apply {
+            webViewClient = object : WebViewClient() {
+                override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
+                    super.onPageStarted(view, url, favicon)
+                    progressBar.visibility = View.VISIBLE
+                }
+
+                override fun onPageFinished(view: WebView?, url: String?) {
+                    super.onPageFinished(view, url)
+                    progressBar.visibility = View.GONE
+                }
+            }
+
+            settings.apply {
+                javaScriptEnabled = true
+                builtInZoomControls = true
+                displayZoomControls = false
+                layoutAlgorithm = WebSettings.LayoutAlgorithm.NORMAL
+                useWideViewPort = true
+                loadWithOverviewMode = true
+                allowFileAccess = true
+                setSupportMultipleWindows(true)
+                setSupportZoom(true)
+                scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
+            }
+
+            // Check if the file is a PDF
+            if (fileUrl.endsWith(".pdf")) {
+                // Use Google Docs Viewer to load the PDF
+                val googleDocsUrl = "https://docs.google.com/viewer?url=$fileUrl"
+                loadUrl(googleDocsUrl)
+            } else {
+                // Load the URL directly in WebView for other files (like images)
+                loadUrl(fileUrl)
+            }
+        }
+    }
+}

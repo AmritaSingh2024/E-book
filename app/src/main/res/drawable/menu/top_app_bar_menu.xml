@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notification"
+        android:title="Notification"
+        android:icon="@drawable/baseline_notifications_24"
+        app:showAsAction="ifRoom"
+        app:actionLayout="@layout/notification_badge"/>
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/baseline_more_vert_24"
+        android:title="More"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/theme_selection"
+                android:title="Theme">
+                <menu>
+                    <item
+                        android:id="@+id/light_mode"
+                        android:title="Light Mode" />
+                    <item
+                        android:id="@+id/dark_mode"
+                        android:title="Dark Mode" />
+                    <item
+                        android:id="@+id/system_default_mode"
+                        android:title="System Default Mode" />
+                </menu>
+            </item>
+        </menu>
+    </item>
+
+</menu>
